@@ -3,10 +3,13 @@ node_js: "0.12"
 
 branches:
   only:
-  	- master
+    -master
+
+install:
+  - npm install
 
 deploy:
-	skip_cleanup: true
-  	provider: heroku
-  	api_key: $HEROKU_API_KEY
-  	strategy: api
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  strategy: api
+  skip_cleanup: true
