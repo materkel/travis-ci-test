@@ -10,3 +10,5 @@ deploy:
   app: mfressdorf-citest
   strategy: api
   skip_cleanup: true
+  run:
+    - "npm start"
