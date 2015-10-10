@@ -1,0 +1,12 @@
+language: node_js
+node_js: "0.12"
+
+branches:
+  only:
+  	- master
+
+deploy:
+	skip_cleanup: true
+  	provider: heroku
+  	api_key: $HEROKU_API_KEY
+  	strategy: api
