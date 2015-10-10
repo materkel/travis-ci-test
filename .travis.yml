@@ -7,5 +7,6 @@ install:
 deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
+  app: mfressdorf-citest
   strategy: api
   skip_cleanup: true
